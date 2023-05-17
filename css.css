@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.4s;
+    font-family: -apple-system,BlinkMacSystemFont,
+    "Segoe UI",Roboto,Helvetica,Arial,sans-serif,
+    "Apple Color Emoji","Segoe UI Emoji",
+    "Segoe UI Symbol";
+  }
+/*aki colaca a imagem de fundo*/
+
+body{
+    background-color: black;
+    background-image: url(..//imgens/tecnologia.jpg);
+    background-size: cover;
+    font-size: 15px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+/*aki inicia o estilo do form1*/
+@keyframes pisca {
+    0%{opacity: 0.1;}
+    50%{opacity: 1;}
+    100%{opacity: 0.1;}  
+}
+
+input, label{
+    display: block;
+    width: 100%;
+}
+input:focus,label:focus{
+    outline: none;
+}
+a{
+    color: #C78C19; 
+}
+
+/*aki inicia o form*/
+#main-container {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    background:rgba(0,0,0,0.8);
+    border-radius: 10px;
+    padding: 25px;
+    
+}
+#main-container h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.6rem;
+    color: #fff;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.full-box{
+    flex:1 1 100%;
+    position: relative;
+    color: #aaa;
+}
+
+.half-box {
+    flex: 1 1 45%;
+    position: relative;
+    color: #aaa;
+} 
+
+.spacing {
+    margin-right: 2.5%;
+}
+
+label{
+    font-weight: bold;
+    font-size: .8rem;
+}
+input {
+    border-bottom: 2px solid #323232;
+    padding: 10px;
+    font-size: .9rem;
+    margin-bottom: 40px;
+    color: #fff;
+    background-color: #23232c;
+}
+
+input:focus {
+    border-color: #C78C19;;
+}
+
+/*transladando o icone do visualisador de senha*/
+span img{
+    position: absolute;
+    margin-top: -60px;
+    margin-left: 190px;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    border-radius: 40%;
+    
+}
+span img:hover{
+    transform: translate(0, -25%);
+}
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+input[type="submit"] {
+    background-color: rgba(36, 18, 53, 0.80);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 50px;
+}
+input[type="submit"]:hover{
+    font-size:larger;
+}
+
+input[type="reset"] {
+    background-color: rgba(36, 18, 53, 0.80);
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+}
+
+input[type="reset"]:hover{
+    font-size: larger;
+} 
+
+#agreement{
+    margin-right: 5px;
+    
+}
+#agreenenterrorMassege{
+    margin-top: -500px;
+}
+#agreement,#agreement-label {
+    display: inline-block;
+    width: auto;
+    
+}
+/* lista de erros , validacao*/
+.error-validation {
+    background-color: rgba(0, 0, 0, 0.74);
+    color: #C78C19;
+    position: absolute;
+    top: 57px;
+    padding: 5px;
+    font-size: .9rem;
+    list-style: none;
+}
+.templet{
+    display: none;
+}
+/*aki começa a estilizaçao do rodapé da tela do inscreva-se*/
+footer {
+	text-align: center;
+	background-color: rgb(10, 10, 10,0.600);
+	padding: 20px;
+    color: #c2c2c2;
+    margin: 20px;
+}
+
+footer img {
+    margin: 50px;
+}
+
+  .email {
+    color: #edf567;
+    text-decoration: none;
+  }
+
+  .email:hover{
+    color: #00e676;
+    font-size: smaller;
+  }
+
+  blockquote {
+    padding: 20px;
+  }
+.imagem_robox{
+    border-radius: 50%;
+}
+
+.copyright {
+	color: #FFFFFF;
+	font-size: 13px;
+	margin: 20px 0 0;
+}
+
+
+
+@media screen and (max-width:760px) and (max-width: 1024px) {
+    #main-container{
+        width:auto;
+    }
+    .container{
+        margin: 0px;
+    }
+    span img{
+        position: absolute;
+        margin-top: -60px;
+        margin-left: 140px;
+        transform: translate(0, -50%);
+        cursor: pointer;
+        border-radius: 40%;
+        
+    }
+ 
